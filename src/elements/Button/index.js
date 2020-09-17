@@ -70,6 +70,7 @@ Button.propTypes = {
     onClick: propTypes.func,
     target: propTypes.string,
     className: propTypes.string,
+    isExternal: propTypes.bool,
     isDisabled: propTypes.bool,
     isLoading: propTypes.bool,
     isSmall: propTypes.bool,
