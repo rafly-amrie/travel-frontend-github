@@ -6,7 +6,7 @@ export default function Button(props) {
     const className = [props.className]
     if (props.isPrimary) className.push("btn-primary")
     if (props.isLarge) className.push("btn-lg")
-    if (props.isSmall) className.push("btn-sm") 
+    if (props.isSmall) className.push("btn-sm")
     if (props.isBlock) className.push("btn-block")
     if (props.hasShadow) className.push("btn-shadow")
 
@@ -24,8 +24,8 @@ export default function Button(props) {
                         <span className="sr-only">Loading...</span>
                     </>
                 ) : (
-                    props.children
-                )}
+                        props.children
+                    )}
             </span>
         )
     }
@@ -45,13 +45,13 @@ export default function Button(props) {
             )
         } else {
             return (
-                <link
+                <Link
                     to={props.href}
                     className={className.join(" ")}
                     style={props.style} onClick={onClick}
                 >
                     {props.children}
-                </link>
+                </Link>
             )
         }
     }
@@ -60,8 +60,8 @@ export default function Button(props) {
         className={className.join(" ")}
         style={props.style}
         onClick={onClick}
-    >{props.children}
-
+    >
+        {props.children}
     </button>
 }
 

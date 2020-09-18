@@ -5,6 +5,9 @@
 
 // Color system
 
+// Custom Warna
+$biru1-1: #023E8A;
+
 $white:    #fff !default;
 $gray-100: #f8f9fa !default;
 $gray-200: #e9ecef !default;
@@ -32,6 +35,10 @@ $grays: map-merge(
   ),
   $grays
 );
+
+// Warna Custom
+$biru1:   #03045E !default;
+$brandicon: #2D9CDB;
 
 $blue:    #007bff !default;
 $indigo:  #6610f2 !default;
@@ -64,7 +71,7 @@ $colors: map-merge(
   $colors
 );
 
-$primary:       $blue !default;
+$primary:       $biru1 !default;
 $secondary:     $gray-600 !default;
 $success:       $green !default;
 $info:          $cyan !default;
