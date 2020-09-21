@@ -14,11 +14,11 @@ export default function Header(props) {
                     <BrandIcon />
                     <div className="collapse navbar-collapse">
                         <ul className="navbar-nav ml-auto">
-                            <li className={`nav-item${getNavLinkClass("/")}`}>
+                            {/* <li className={`nav-item${getNavLinkClass("/")}`}>
                                 <Button className="nav-link" type="link" href="/">
                                     Home
                                 </Button>
-                            </li>
+                            </li> */}
                             <li className={`nav-item${getNavLinkClass("/tempat-pariwisata")}`}>
                                 <Button className="nav-link" type="link" href="/tempat=pariwisata">
                                     Tempat Pariwisata
@@ -34,20 +34,34 @@ export default function Header(props) {
                                     Cafe & Restaurant
                                 </Button>
                             </li>
-                            <li className={`nav-item${getNavLinkClass("/profil")} dropdown`}>
+                            {/* <li className={`nav-item${getNavLinkClass("/profil")} dropdown`}>
+                                <img src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/fox.jpg" width="40" height="40" class="rounded-circle" />
                                 <a class="nav-link dropdown-toggle" href="/" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" />
-                                {/* <img src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/fox.jpg" width="40" height="40" class="rounded-circle" /> */}
-                                <a />
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                     <a class="dropdown-item" href="#">Dashboard</a>
                                     <a class="dropdown-item" href="#">Edit Profile</a>
                                     <a class="dropdown-item" href="#">Log Out</a>
                                 </div>
+                            </li> */}
+                        </ul>
+                        <ul className="navbar-nav ml-auto">
+                            <li className={`nav-item${getNavLinkClass("/cafe-restaurant")}`}>
+                                <Button className="nav-link" type="link" href="/cafe-restaurant">
+                                    Login
+                                </Button>
+                            </li>
+
+                            <p className={`nav-link`}>|</p>
+
+                            <li className={`nav-item${getNavLinkClass("/cafe-restaurant")}`}>
+                                <Button className="nav-link" type="link" href="/cafe-restaurant">
+                                    Register
+                                </Button>
                             </li>
                         </ul>
                     </div>
                 </nav>
             </div>
-        </header>
+        </header >
     )
 }
