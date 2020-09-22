@@ -1,8 +1,8 @@
 import React from 'react'
-import ImageHero from 'assets/images/img-hero.jpeg'
+import ImageHero from 'assets/images/img-hero.jpg'
 import Logo from 'assets/images/icons/icon-logo.svg'
-
 import Button from 'elements/Button'
+
 export default function Hero(props) {
     function showMostPicked() {
         window.scrollTo({
@@ -13,8 +13,8 @@ export default function Hero(props) {
     return (
         <section className="container pt-4">
             <div className="row align-items-center">
-                <div className="col-auto pr-5" style={{ width: 422 }}>
-                    <h1 className="h2 font-weight-bold line-height-1 mb-3">
+                <div className="col-auto pr-5" style={{ width: 530 }}>
+                    <h1 className="font-weight-bold line-height-1 mb-3">
                         The travel on you <br />
                         Go travelling now.
                     </h1>
@@ -33,7 +33,7 @@ export default function Hero(props) {
                     {/* Awal Gambar */}
                     <div className="row mt-5" >
                         {/* Gambar 1 */}
-                        <div className="col-auto">
+                        <div className="col-auto" style={{ marginRight: 35 }}>
                             <img
                                 width="36"
                                 height="36"
@@ -48,7 +48,7 @@ export default function Hero(props) {
                             </h6>
                         </div>
                         {/* Gambar 2 */}
-                        <div className="col-auto">
+                        <div className="col-auto" style={{ marginRight: 35 }}>
                             <img
                                 width="36"
                                 height="36"
@@ -62,7 +62,7 @@ export default function Hero(props) {
                             </h6>
                         </div>
                         {/* Gambar 2 */}
-                        <div className="col-auto">
+                        <div className="col-auto" style={{ marginRight: 35 }}>
                             <img
                                 width="36"
                                 height="36"
@@ -75,6 +75,17 @@ export default function Hero(props) {
                                 </span>
                             </h6>
                         </div>
+                    </div>
+                </div>
+                {/* Gambar Hero */}
+                <div className="col-6 pl-5">
+                    <div style={{ width: 520, height: 410 }}>
+                        <img
+                            src={ImageHero}
+                            alt="Mountain View"
+                            className="img-fluid position-absolute"
+                            style={{ margin: '-25px 0 0 -25px', zIndex: 1 }}
+                        />
                     </div>
                 </div>
             </div>

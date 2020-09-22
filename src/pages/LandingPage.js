@@ -8,8 +8,9 @@ export default class LandingPage extends Component {
         console.log(this.props);
         return (
             <>
-                <Header {...this.props}></Header>
-                <Hero data="landingPage" />
+                <Header {...this.props}> </Header>
+                <Hero data="landingPage.hero" />
+                <landingPage data="landingPage.hero" />
             </>
         )
     }
