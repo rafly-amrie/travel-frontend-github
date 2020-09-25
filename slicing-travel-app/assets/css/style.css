@@ -1,58 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap');
 
+@media screen and (max-width:680px) {
+    #maincontent {
+        width: auto;
+        float: none;
+    }
+
+    #sidebar {
+        width: auto;
+        float: none;
+    }
+}
+
 * {
     font-family: "Quicksand";
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
-/*
-.container {
-    width: 1140px;
-    margin: 0 auto;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333333;
-}
-
-li {
-    float: center;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 16px;
-    text-decoration: none;
-}
-
-li a:hover {
-    background-color: #111111;
-} */
-
-/* .topnav-centered a {
-    float: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-} */
-
-button :hover {
-    background-color: darkslategray;
-}
-
-.bg-img {
+.img-hero {
     /* The image used */
     background-image: url("../img/img-hero.jpg");
-
     min-height: 600px;
 
     /* Center and scale the image nicely */
@@ -62,6 +29,52 @@ button :hover {
 
     /* Needed to position the navbar */
     position: relative;
+}
+
+ul {
+    list-style-type: none;
+    overflow: hidden;
+}
+
+li {
+    float: center;
+}
+
+li a {
+    /* display: block */
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.topnav-centered a {
+    float: none;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.hero-btn {
+    font-size: 25px;
+    color: #000000;
+    border-bottom: #000000;
+}
+
+.hero-btn:hover {
+    background-color: #00aced;
+    opacity: 75%;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
 }
 
 nav a {
@@ -77,13 +90,6 @@ nav a {
 .span {
     font-size: 25px;
     color: #007bb6;
-}
-
-.isDisabled {
-    color: currentColor;
-    cursor: not-allowed;
-    opacity: 0.5;
-    text-decoration: none;
 }
 
 li a {
@@ -152,6 +158,11 @@ img {
 
 .hero-space {
     margin-top: 8rem;
+}
+
+.content {
+    text-align: center;
+    margin: 0 auto;
 }
 
 
@@ -319,5 +330,11 @@ img {
         display: block;
         margin-right: 0;
         font-weight: 600
+    }
+}
+
+@mediaquery (max-width:720px) {
+    .img-hero {
+        width: 100vw;
     }
 }
