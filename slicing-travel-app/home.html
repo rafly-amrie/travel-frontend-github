@@ -3,6 +3,7 @@
 
 <head>
   <title>Travelling Apps</title>
+
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -10,270 +11,302 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/home.css">
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-  <div id="background"></div>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-sm">
-    <a class="navbar-brand" href="#">
-      <img class="brand-img" src="./assets/icon/Traveling Apps.png" alt="Brand-Icon">
-    </a>
-    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarCollapse">
-      <span class="navbar-toggler-icon my-toggler"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-      <ul class="navbar-nav mx-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Tempat Pariwisata
-            <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Restaurant</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Hotel</a>
-        </li>
-      </ul>
-      <ul class="navbar-nav mt-2 mt-lg-0">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">
-            <img class="nav-img" src="./assets/icon/plus_logo.png" width="30" height="30">
+  <!-- HEADER -->
+  <div id="header">
+    <div id="background">
+      <div class="container">
+        <!-- Navbar -->
+        <nav class="nav navbar navbar-nav navbar-expand-sm">
+          <!-- BRAND ICON -->
+          <a class="navbar-brand" href="#">
+            <img src="./assets/icon/Traveling Apps.png" alt="Brand-Icon" />
           </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">
-            <img class="nav-img" src="./assets/icon/Love.png" width="30" height="30">
-          </a>
-        </li>
-        <li role="separator" class="react-navbar-color svelte-1i2hclv">
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">
-            <img class="nav-img" src="./assets/icon/profile.png" width="30" height="30">
-          </a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <!-- Hero -->
-  <div class="container">
-    <section id="hero">
-      <h1 class="display-4 h1-hero">The Travel On You</h1>
-      <div style="text-align: center;">
-        <button class="btn btn-primary btn-hero" style="width: 10rem;">Let's Travel</button>
-    </section>
-    <div class="row content-row">
-      <main id="content">
-        <h1 class="mb-5 mt-3">Rekomendasi Tempat Wisata</h1>
-        <div class="row" style="margin: 0.5em">
-          <div class="col-md-3 col-sm-12 mb-3">
-            <div class="card shadow rounded" id="card1">
-              <div class="card-body rounded-bottom">
-              </div>
-              <div class="card-footer rounded-top">
-                <p class="text-muted mb-0">Borobudur</p>
-                <small class="text-muted">Indonesia</small>
-              </div>
-            </div>
+          <!-- TOGGLER BUTTON -->
+          <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon my-toggler"></span>
+          </button>
+          <!-- MENU LINK -->
+          <div id="navbarCollapse" class="collapse navbar-collapse">
+            <ul class="nav navbar navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#"> Tempat Pariwisata </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"> Restaurant </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"> Hotel </a>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">
+                  <img src="./assets/icon/plus_logo.png" />
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <img src="./assets/icon/Love.png" />
+                </a>
+              </li>
+              <li class="separator"></li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <img src="./assets/icon/profile.png" />
+                </a>
+              </li>
+            </ul>
           </div>
-          <div class="col-md-3 col-sm-12 mb-3">
-            <div class="card shadow rounded" id="card2" style="width: 15rem; height: 20rem; border: none;">
-              <div class="card-body rounded-bottom">
-
-              </div>
-              <div class="card-footer rounded-top">
-                <p class="text-muted mb-0">Green Canyon</p>
-                <small class="text-muted">Indonesia</small>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-12 mb-3">
-            <div class="card shadow rounded" id="card3" style="width: 15rem; height: 20rem; border: none;">
-              <div class="card-body rounded-bottom">
-
-              </div>
-              <div class="card-footer rounded-top">
-                <p class="text-muted mb-0">Pelabuhan Ratu</p>
-                <small class="text-muted">Indonesia</small>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-12 mb-3">
-            <div class="card shadow rounded" id="card4" style="width: 15rem; height: 20rem; border: none;">
-              <div class="card-body rounded-bottom">
-
-              </div>
-              <div class="card-footer rounded-top">
-                <p class="text-muted mb-0">Situs Jabar</p>
-                <small class="text-muted">Indonesia</small>
-              </div>
-            </div>
-          </div>
+        </nav>
+        <!-- HERO -->
+        <div id="hero">
+          <h1 class="display-4"> The Travel On You </h1>
+          <button class="btn btn-primary"> Let's Travel </button>
         </div>
-      </main>
-      <main id="content">
-        <h1 class="mb-5 mt-3">Daerah Pariwisata di Jawa Barat</h1>
-        <div class="row" style="margin: 0.5em">
-          <div class="col-md-3 col-sm-12 mb-3">
-            <div class="card shadow circle" id="card1" style="width: 15rem; height: 15rem; border: none;">
-              <h1 class="display-4 text-center text-white shadow" style="margin-top: 6rem; font-size:40px;">
-                Sukabumi
-              </h1>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-12 mb-3">
-            <div class="card shadow circle" id="card1" style="width: 15rem; height: 15rem; border: none;">
-              <h1 class="display-4 text-center text-white shadow" style="margin-top: 6rem; font-size: 40px;">Sukabumi
-              </h1>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-12 mb-3">
-            <div class="card shadow circle" id="card1" style="width: 15rem; height: 15rem; border: none;">
-              <h1 class="display-4 text-center text-white shadow" style="margin-top: 6rem; font-size: 40px;">Sukabumi
-              </h1>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-12 mb-3">
-            <div class="card shadow circle" id="card1" style="width: 15rem; height: 15rem; border: none;">
-              <h1 class="display-4 text-center text-white shadow" style="margin-top: 6rem; font-size: 40px;">Sukabumi
-              </h1>
-            </div>
-          </div>
-        </div>
-      </main>
-      <main id="content">
-        <h1 class="mb-5 mt-3">Pilihan sesuai minat anda</h1>
-        <div class="row" style="margin: 0.5em">
-          <div class="col-md-3 col-sm-12 mb-3">
-            <div class="card shadow circle" id="card1" style="width: 15rem; height: 15rem; border: none;">
-              <div class="card-body rounded-bottom">
-
-              </div>
-              <div class="card-footer rounded-top"
-                style="background-color: whitesmoke; height: 9vh; border-style: none;">
-                <p class="text-muted mb-0">Borobudur</p>
-                <small class="text-muted">Indonesia</small>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-12 mb-3">
-            <div class="card shadow circle" id="card1" style="width: 15rem; height: 15rem; border: none;">
-              <div class="card-body rounded-bottom">
-
-              </div>
-              <div class="card-footer rounded-top"
-                style="background-color: whitesmoke; height: 9vh; border-style: none;">
-                <p class="text-muted mb-0">Borobudur</p>
-                <small class="text-muted">Indonesia</small>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-12 mb-3">
-            <div class="card shadow circle" id="card1" style="width: 15rem; height: 15rem; border: none;">
-              <div class="card-body rounded-bottom">
-
-              </div>
-              <div class="card-footer rounded-top"
-                style="background-color: whitesmoke; height: 9vh; border-style: none;">
-                <p class="text-muted mb-0">Borobudur</p>
-                <small class="text-muted">Indonesia</small>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-12 mb-3">
-            <div class="card shadow circle" id="card1" style="width: 15rem; height: 15rem; border: none;">
-              <div class="card-body rounded-bottom">
-
-              </div>
-              <div class="card-footer rounded-top"
-                style="background-color: whitesmoke; height: 9vh; border-style: none;">
-                <p class="text-muted mb-0">Borobudur</p>
-                <small class="text-muted">Indonesia</small>
-              </div>
-            </div>
-          </div>
-        </div>
-      </main>
+      </div>
     </div>
   </div>
-  <!-- Card -->
 
-  <!-- Card Mbuler -->
+  <!-- CONTENT -->
+  <div id="content">
+    <div class="container">
+
+      <!-- WISATA -->
+      <h1> Rekomendasi Tempat Wisata </h1>
+      <div id="wisata" class="row">
+        <!-- CARD-1 -->
+        <div class="col-md-3 col-sm-12 mb-3">
+          <div id="card1" class="card">
+            <div class="card-body">
+            </div>
+            <div class="card-footer">
+              <p>Borobudur</p>
+              <small>Indonesia</small>
+            </div>
+          </div>
+        </div>
+        <!-- CARD-2 -->
+        <div class="col-md-3 col-sm-12 mb-3">
+          <div id="card2" class="card">
+            <div class="card-body">
+            </div>
+            <div class="card-footer">
+              <p>Green Canyon</p>
+              <small>Indonesia</small>
+            </div>
+          </div>
+        </div>
+        <!-- CARD-3 -->
+        <div class="col-md-3 col-sm-12 mb-3">
+          <div id="card3" class="card">
+            <div class="card-body">
+            </div>
+            <div class="card-footer">
+              <p>Pelabuhan Ratu</p>
+              <small>Indonesia</small>
+            </div>
+          </div>
+        </div>
+        <!-- CARD-4 -->
+        <div class="col-md-3 col-sm-12 mb-3">
+          <div id="card4" class="card">
+            <div class="card-body">
+            </div>
+            <div class="card-footer">
+              <p>Situs Jabar</p>
+              <small>Indonesia</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DAERAH JABAR -->
+      <h1> Daerah Pariwisata di Jawa Barat </h1>
+      <div id="daerah" class="row">
+        <div class="col-md-3 col-sm-12 mb-3">
+          <div id="card1" class="card circle">
+            <h1 class="display-4"> Sukabumi </h1>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-12 mb-3">
+          <div id="card1" class="card circle">
+            <h1 class="display-4"> Sukabumi </h1>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-12 mb-3">
+          <div id="card1" class="card circle">
+            <h1 class="display-4"> Sukabumi </h1>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-12 mb-3">
+          <div id="card1" class="card circle">
+            <h1 class="display-4"> Sukabumi </h1>
+          </div>
+        </div>
+      </div>
+
+      <!-- MINAT -->
+      <h1> Pilihan sesuai minat anda </h1>
+      <div id="minat" class="row">
+        <div class="col-md-3 col-sm-12 mb-3">
+          <div id="card1" class="card circle">
+            <h1 class="display-4"> Sukabumi </h1>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-12 mb-3">
+          <div id="card1" class="card circle">
+            <h1 class="display-4"> Sukabumi </h1>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-12 mb-3">
+          <div id="card1" class="card circle">
+            <h1 class="display-4"> Sukabumi </h1>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-12 mb-3">
+          <div id="card1" class="card circle">
+            <h1 class="display-4"> Sukabumi </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="codepen" class="text-center">
+      <!-- horizontal -->
+      <!-- <h1 class="h1-title">Card Lainnya</h1> -->
+      <div class="flip">
+        <div class="front"
+          style="background-image: url(https://images.pexels.com/photos/540518/pexels-photo-540518.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb)">
+          <h1 class="text-shadow">MOUNTAIN</hi>
+        </div>
+        <div class="back">
+          <h2>Angular</h2>
+          <p>Good tools make application development quicker and easier to maintain than if you did everything by
+            hand..</p>
+        </div>
+      </div>
+      <div class="flip">
+        <div class="front"
+          style="background-image: url(https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb)">
+          <h1 class="text-shadow">LAKE</hi>
+        </div>
+        <div class="back">
+          <h2>Angular</h2>
+          <p>Good tools make application development quicker and easier to maintain than if you did everything by
+            hand..</p>
+        </div>
+      </div>
+      <div class="flip">
+        <div class="front"
+          style="background-image: url(https://images.pexels.com/photos/36717/amazing-animal-beautiful-beautifull.jpg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb)">
+          <h1 class="text-shadow">OCEAN</hi>
+        </div>
+        <div class="back">
+          <h2>Angular</h2>
+          <p>Good tools make application development quicker and easier to maintain than if you did everything by
+            hand..</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12 col-md-6">
-          <img src="assets/icon/icon-logo.svg" alt="logo-icon" class="mb-4">
-          <p class="text-justify">Scanfcode.com Plan and book your perfect trip with
-            expert advice, travel tips destination information from us</p>
-          <p class="">&copy; 2020 All Rights Reserved by
-            <a href="#">Travel Apps</a>.
-          </p>
+  <div id="footer">
+    <footer>
+      <div class="container">
+        <div class="row">
+          <!-- ABOUT -->
+          <div id="about" class="col-sm-12 col-md-6">
+            <img src="assets/icon/icon-logo.svg" alt="logo-icon" />
+            <p>
+              Scanfcode.com Plan and book your perfect trip with expert
+              advice, travel tips destination information from us.
+            </p>
+            <p>
+              &copy; 2020 All Rights Reserved by <a href="#">Travel Apps</a>.
+            </p>
+          </div>
+          <!-- MENU 1 -->
+          <div class="col-xs-6 col-md-2">
+            <h6>Destinations</h6>
+            <ul class="footer-links">
+              <li><a href="#"> Green Canyon </a></li>
+              <li><a href="#"> Kawah Putih </a></li>
+              <li><a href="#"> Stone Garden </a></li>
+              <li><a href="#"> Curug Cikaso </a></li>
+              <li><a href="#"> Alam Panenjoan </a></li>
+            </ul>
+          </div>
+          <!-- MENU 2 -->
+          <div class="col-xs-6 col-md-2">
+            <h6>Shop</h6>
+            <ul class="footer-links">
+              <li><a href="#">Destination Guides </a></li>
+              <li><a href="#">Pictorial & Gifts </a></li>
+              <li><a href="#">Special Offers </a></li>
+              <li><a href="#">Delivery Times </a></li>
+            </ul>
+          </div>
+          <!-- MENU 3 -->
+          <div class="col-xs-6 col-md-2">
+            <h6>Info</h6>
+            <ul class="footer-links">
+              <li><a href="#">About Us </a></li>
+              <li><a href="#">Contact Us </a></li>
+              <li><a href="#">Contribute </a></li>
+              <li><a href="#">Privacy Policy </a></li>
+              <li><a href="#">Sitemap </a></li>
+            </ul>
+          </div>
         </div>
-
-        <div class="col-xs-6 col-md-2">
-          <h6 style="color: black;">Destinations</h6>
-          <ul class="footer-links">
-            <li><a href="#">Green Canyon</a></li>
-            <li><a href="#">Kawah Putih</a></li>
-            <li><a href="#">Stone Garden</a></li>
-            <li><a href="#">Curug Cikaso</a></li>
-            <li><a href="#">Alam Panenjoan</a></li>
-          </ul>
-        </div>
-
-        <div class="col-xs-6 col-md-2">
-          <h6 style="color: black;">Shop</h6>
-          <ul class="footer-links">
-            <li><a href="#">Destination Guides</a></li>
-            <li><a href="#">Pictorial & Gifts</a></li>
-            <li><a href="#">Special Offers</a></li>
-            <li><a href="#">Delivery Times</a></li>
-          </ul>
-        </div>
-
-        <div class="col-xs-6 col-md-2">
-          <h6 style="color: black;">Info</h6>
-          <ul class="footer-links">
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">Contribute</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Sitemap</a></li>
+        <!-- SEPARATOR -->
+        <hr />
+      </div>
+      <!-- SOCIAL ICONS -->
+      <div class="container">
+        <div class="links">
+          <ul class="social-icons">
+            <li>
+              <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li>
+              <a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
+            </li>
+            <li>
+              <a class="instagram" href="#"><i class="fa fa-instagram"></i></a>
+            </li>
+            <li>
+              <a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+            </li>
+            <li>
+              <a class="youtube" href="#"><i class="fa fa-youtube"></i></a>
+            </li>
           </ul>
         </div>
       </div>
-      <hr>
-    </div>
-    <div class="container">
-      <div class="links">
-        <ul class="social-icons">
-          <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-          <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-          <li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
-          <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
-          <li><a class="youtube" href="#"><i class="fa fa-youtube"></i></a></li>
-        </ul>
-      </div>
-  </footer>
+    </footer>
+  </div>
 
   <!-- Optional JavaScript -->
+
+  <!-- CEK KEKELIRUAN ATAU BUG MUNCUL DI CONSOLE LOG -->
   <script>
-    function myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-        x.className += " responsive";
-      } else {
-        x.className = "topnav";
+    var docWidth = document.documentElement.offsetWidth;
+
+    [].forEach.call(document.querySelectorAll("*"), function (el) {
+      if (el.offsetWidth > docWidth) {
+        console.log(el);
       }
-    }
+    });
   </script>
 
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
