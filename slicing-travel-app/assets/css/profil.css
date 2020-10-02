@@ -95,6 +95,12 @@ body section {
   margin-bottom: 5%;
 }
 
+#content #btn-edit {
+  border-radius: 1rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+
 #content #user-info {
   background-color: #0077b6;
   margin: 0 auto;
