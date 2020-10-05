@@ -1,0 +1,453 @@
+/* TEMPLATE */
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap");
+body {
+  font-family: "Quicksand", sans-serif;
+  background-color: #eaedf2;
+  overflow-x: hidden;
+}
+
+body section {
+  margin: 0px;
+}
+
+#header {
+  /* NAVBAR */
+  /* HERO */
+}
+
+#header #background {
+  background-image: url("../img/img-hero.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 35vmax;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  z-index: -1;
+}
+
+#header nav {
+  background-color: white;
+  position: relative;
+  margin-right: 5px;
+  margin-left: 5px;
+  width: 100%;
+  padding: 0;
+  /* SEPARATOR */
+}
+
+#header nav container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#header nav a {
+  margin: 0;
+  float: left;
+}
+
+#header nav a h5 {
+  display: inline;
+}
+
+#header nav ul {
+  margin-left: 2rem;
+}
+
+#header nav ul li a.nav-link {
+  color: black;
+  display: inline;
+}
+
+#header nav ul li a.nav-link:hover {
+  color: #03045e;
+  text-decoration: underline;
+}
+
+#header nav li.separator {
+  background: currentColor;
+  margin: auto 17px;
+  display: inline-block;
+  height: 25px;
+  width: 1px;
+  color: black;
+}
+
+#header #hero {
+  text-align: center;
+}
+
+#header #hero h1 {
+  margin: auto;
+  margin-top: 9rem;
+  color: white;
+  text-shadow: 2px 2px 4px black;
+  letter-spacing: 5px;
+}
+
+#header #hero button {
+  margin-top: 3em;
+  width: 20rem;
+}
+
+#header #hero button:hover {
+  letter-spacing: 2.5px;
+}
+
+#hero ul {
+  margin-top: 3rem;
+  margin-bottom: 0;
+  text-align: left;
+  color: black;
+}
+
+#hero ul li img {
+  width: 115px;
+  height: 115px;
+}
+
+#hero ul li.user-info {
+  margin-left: 2rem;
+}
+
+#content {
+  margin-top: 2rem;
+}
+
+#content .container {
+  padding: 0px none;
+}
+
+#content h1 {
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  font-size: vmax;
+}
+
+#content .card {
+  width: 15rem;
+  height: 20rem;
+  border: none;
+  border-radius: 10px;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+#content #cart #booking {
+  /* Phone Devices Query */
+}
+
+#content #cart #booking .card-container {
+  overflow: hidden;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+#content #cart #booking .float-layout {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: auto;
+  width: 100%;
+  margin: 0;
+}
+
+#content #cart #booking .card-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#content #cart #booking .card-image img {
+  width: 40%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-position: center;
+  border-radius: 25px 0px 0px 25px;
+}
+
+#content #cart #booking .booking-card {
+  width: 100%;
+  border: none;
+  height: 18rem;
+  color: black;
+  min-height: 100%;
+  background-color: white;
+  border-radius: 0px 25px 25px 0px;
+}
+
+#content #cart #booking .content {
+  margin-top: 5px;
+  margin-left: 7.5px;
+}
+
+#content #cart #booking .content .card-title {
+  font-weight: bold;
+  display: inline;
+  margin-top: 5rem;
+}
+
+#content #cart #booking .content .card-title h3 {
+  display: inline;
+  margin-top: 5rem;
+}
+
+#content #cart #booking .content .card-title p {
+  float: right;
+  text-align: center;
+  display: inline;
+  margin-right: 1rem;
+}
+
+#content #cart #booking .content .card-desc {
+  font-size: 18px;
+  text-align: left;
+  width: 75%;
+  padding-top: 20px;
+  padding-left: 5px;
+}
+
+#content #cart #booking .content .qty {
+  float: right;
+  margin-right: 1rem;
+}
+
+#content #cart #booking .content .qty button {
+  border: none;
+  background-color: transparent;
+}
+
+#content #cart #booking .content .qty p {
+  display: inline;
+}
+
+#content #cart #booking .content .license {
+  display: inline;
+  text-align: center;
+  margin-top: 5em;
+}
+
+#content #cart #booking .content .license input {
+  margin-top: 1rem;
+}
+
+#content #cart #booking .content .license p {
+  display: inline;
+  margin-top: 1rem;
+}
+
+#content #cart #booking .content .license .do {
+  float: right;
+  margin: 0px;
+}
+
+@media only screen and (max-width: 37.5em) {
+  #content #cart #booking {
+    /*add this it*/
+    /*----------------------*/
+  }
+  #content #cart #booking .card-image img {
+    width: 100%;
+    height: auto;
+  }
+  #content #cart #booking .card-image {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #content #cart #booking .card {
+    width: 100%;
+    margin-top: -4px;
+  }
+}
+
+#content #cart #card2 {
+  position: initial;
+  height: 30rem;
+  width: 100%;
+}
+
+#content #cart #card2 .hr-total {
+  position: relative;
+  border: none;
+  height: 3px;
+  background: black;
+}
+
+#content #cart #card2 h1 {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#content #cart #card2 p {
+  display: inline;
+}
+
+#content #cart #card2 .p2 {
+  float: right;
+}
+
+#content #cart #card2 .bayar {
+  display: inline;
+}
+
+#content #cart #card2 .bayar h5 {
+  font-weight: bold;
+}
+
+#content #cart #card2 label {
+  margin-bottom: 0rem;
+}
+
+#content #codepen img {
+  background-position: center;
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 25vmax;
+  width: 100%;
+  z-index: -1;
+}
+
+#footer {
+  font-size: 15px;
+  color: #737373;
+  height: 0 auto;
+  background-color: #fafafa;
+}
+
+#footer #about img {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 75px;
+  height: 75px;
+}
+
+#footer #about p {
+  text-align: justify;
+}
+
+#footer h6 {
+  color: black;
+  text-transform: uppercase;
+  margin-top: 2rem;
+  letter-spacing: 2px;
+}
+
+#footer .footer-links {
+  padding-left: 0;
+  list-style: none;
+}
+
+#footer .footer-links a {
+  color: #737373;
+}
+
+#footer .footer-links a:active,
+#footer .footer-links a:focus,
+#footer .footer-links a:hover {
+  color: #3366cc;
+  text-decoration: none;
+}
+
+#footer hr {
+  border-top-color: #bbb;
+  opacity: 0.5;
+}
+
+#footer .social-icons {
+  text-align: center;
+  padding-left: 0;
+  list-style: none;
+}
+
+#footer .social-icons li {
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+#footer .social-icons a {
+  width: 44px;
+  height: 44px;
+  margin-left: 5px;
+  margin-right: 8px;
+  font-size: 16px;
+  color: #818a91;
+  line-height: 44px;
+  text-align: center;
+  border-radius: 100%;
+  display: inline-block;
+  transition: all 0.2s linear;
+  background-color: #eceeef;
+  -o-transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+}
+
+#footer .social-icons a.twitter:hover {
+  background-color: #00aced;
+}
+
+#footer .social-icons a.facebook:hover {
+  background-color: #3b5998;
+}
+
+#footer .social-icons a.instagram:hover {
+  background-color: #d62976;
+}
+
+#footer .social-icons a.linkedin:hover {
+  background-color: #007bb6;
+}
+
+#footer .social-icons a.youtube:hover {
+  background-color: #fd0000;
+}
+
+#footer .social-icons a:active,
+#footer .social-icons a:focus,
+#footer .social-icons a:hover {
+  color: #fff;
+  background-color: #29aafe;
+}
+
+#footer .social-icons size-sm a {
+  line-height: 34px;
+  height: 34px;
+  width: 34px;
+  font-size: 14px;
+}
+
+@media (max-width: 991px) {
+  #footer .site-footer [class^="col-"] {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  #footer .site-footer {
+    padding-bottom: 0;
+  }
+  #footer .site-footer .copyright-text,
+  #footer .site-footer .social-icons {
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  #footer .social-icons li.title {
+    display: block;
+    margin-right: 0;
+    font-weight: 600;
+  }
+}
+/*# sourceMappingURL=cart.css.map */
