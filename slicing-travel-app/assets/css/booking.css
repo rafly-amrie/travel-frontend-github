@@ -206,7 +206,7 @@ body section {
   color: black;
   min-height: 100%;
   background-color: white;
-  border-radius: 0px 25px 25px 0px;
+  border-radius: 25px;
 }
 
 #content #cart #booking .content {
@@ -499,4 +499,4 @@ body section {
     font-weight: 600;
   }
 }
-/*# sourceMappingURL=cart.css.map */
+/*# sourceMappingURL=booking.css.map */
