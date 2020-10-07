@@ -119,29 +119,11 @@ body {
   }
 }
 
-#hero {
-  ul {
-    margin-top: 3rem;
-    margin-bottom: 0;
-    text-align: left;
-    color: black;
-  }
-
-  ul li img {
-    width: 115px;
-    height: 115px;
-  }
-
-  ul li.user-info {
-    margin-left: 2rem;
-  }
-}
-
 #content {
   margin-top: 2rem;
 
   .container {
-    padding: 0px none;
+    padding: none;
   }
 
   .card {
@@ -153,146 +135,106 @@ body {
   }
 
   #cart {
-    grid-area: main;
 
-    .float-layout {
-      margin: 0;
-      height: auto;
-      box-sizing: border-box;
+    #loader {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      z-index: 1;
+      width: 150px;
+      height: 150px;
+      margin: -62px 0 0 -62px;
+      border: 16px solid #f3f3f3;
+      border-radius: 50%;
+      border-top: 16px solid #3498db;
+      width: 120px;
+      height: 120px;
+      -webkit-animation: spin 2s linear infinite;
+      animation: spin 2s linear infinite;
     }
 
-    #user-info {
-      width: 100%;
-      position: sticky;
-      grid-area: right;
-      height: fit-content;
-      margin-bottom: 5rem;
-
-      h1 {
-        margin-top: 0px;
-        font-size: 30px;
-        font-weight: bold;
-        margin-bottom: 20px;
+    @-webkit-keyframes spin {
+      0% {
+        -webkit-transform: rotate(0deg);
       }
 
-      table {
-        font-size: 20px;
-      }
-
-      table tr td {
-        padding: 7.5px;
-      }
-
-      table tr td label.label2 {
-        font-weight: bold;
+      100% {
+        -webkit-transform: rotate(360deg);
       }
     }
 
-    #payment {
-      width: 100%;
-      position: sticky;
-      grid-area: right;
-      height: fit-content;
-      margin-bottom: 5rem;
-
-      h1 {
-        margin-top: 0px;
-        font-size: 30px;
-        font-weight: bold;
-        margin-bottom: 20px;
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
       }
 
-      .hide {
-        display: none;
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    /* Add animation to "page content" */
+    .animate-bottom {
+      position: relative;
+      -webkit-animation-name: animatebottom;
+      -webkit-animation-duration: 1s;
+      animation-name: animatebottom;
+      animation-duration: 1s
+    }
+
+    @-webkit-keyframes animatebottom {
+      from {
+        bottom: -100px;
+        opacity: 0
       }
 
-      p {
-        font-weight: bold;
+      to {
+        bottom: 0px;
+        opacity: 1
+      }
+    }
+
+    @keyframes animatebottom {
+      from {
+        bottom: -100px;
+        opacity: 0
       }
 
-      input {
+      to {
+        bottom: 0;
+        opacity: 1
+      }
+    }
+
+    #myDiv {
+      display: none;
+      text-align: center;
+    }
+
+    #checkout {
+      margin-bottom: 2.5rem;
+      display: inline-block;
+
+      .user-info {
+        width: 100%;
+        height: 100%;
         margin: 0;
-        margin-bottom: 1rem;
-      }
 
-      label {
-        margin: 0;
-        margin-bottom: 1rem;
-      }
-
-      ul {
-        list-style: none;
-      }
-
-      .form-inline label {
-        margin: 0;
-        margin-right: 13rem;
-        width: max-content;
-      }
-
-      .form-inline .col-md-6 {
-        padding-left: 0;
-      }
-
-      // SHOW HIDE
-      .reveal-if-active {
-        opacity: 0;
-        max-height: 0;
-        overflow: hidden;
-        font-size: 16px;
-        transform: scale(0.8);
-        transition: 0.5s;
-
-        label {
-          display: block;
-          margin: 0 0 3px 0;
+        h1 {
+          margin-top: 0px;
+          font-size: 30px;
+          font-weight: bold;
+          margin-bottom: 20px;
         }
 
-        input[type=text] {
-          width: 100%;
+        ul li label {
+          color: black;
         }
 
-        input[type="radio"]:checked~&,
-        input[type="checkbox"]:checked~& {
-          opacity: 1;
-          max-height: 100px;
-          padding: 10px 20px;
-          transform: scale(1);
-          overflow: visible;
+        .invoice {
+          display: inline-block;
         }
 
-      }
-
-      form {
-        max-width: 500px;
-        margin: 20px auto;
-
-        >div {
-          margin: 0 0 20px 0;
-
-          label {
-            font-weight: bold;
-          }
-
-          >div {
-            padding: 5px;
-          }
-        }
-
-        >h4 {
-          color: green;
-          font-size: 24px;
-          margin: 0 0 10px 0;
-          border-bottom: 2px solid green;
-        }
-      }
-
-      body {
-        font-size: 20px;
-      }
-
-      * {
-        box-sizing: border-box;
       }
     }
   }
@@ -314,73 +256,6 @@ body {
     }
   }
 
-  #card2 {
-    position: sticky;
-    height: fit-content;
-    width: 100%;
-    grid-area: right;
-
-
-    .hr-total {
-      position: relative;
-      border: none;
-      height: 3px;
-      background: black;
-    }
-
-    h1 {
-      margin-top: 0px;
-      margin-bottom: 20px;
-      text-align: center;
-      font-size: 30px;
-      font-weight: bold;
-    }
-
-    p {
-      display: inline;
-      // margin-left: 4rem;
-    }
-
-    .p2 {
-      float: right;
-    }
-
-    .bayar {
-      display: inline;
-
-      h5 {
-        font-weight: bold;
-      }
-    }
-
-    label {
-      // margin-left: 3rem;
-      margin-bottom: 0rem;
-    }
-
-    #btn-edit {
-      border-radius: 1rem;
-      text-align: center;
-      margin-top: 2rem;
-      background-color: #00aced;
-      color: white;
-    }
-
-    #btn-edit:hover {
-      letter-spacing: 2.5px;
-    }
-  }
-}
-
-#codepen {
-  img {
-    background-position: center;
-    background-size: cover;
-    object-fit: cover;
-    height: 25vmax;
-    width: 100%;
-    z-index: -1;
-  }
 }
 
 #footer {

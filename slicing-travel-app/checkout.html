@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Travelling Apps</title>
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/checkout.css" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <script src="https://kit.fontawesome.com/f4a7101621.js" crossorigin="anonymous"></script>
+</head>
+
+<body onload="myFunction()">
+  <!-- HEADER -->
+  <div id="header">
+
+    <!-- NAVBAR -->
+    <nav class="nav navbar navbar-nav navbar-light bg-faded navbar-expand-sm">
+      <div class="container">
+
+        <!-- BRAND ICON -->
+        <a class="navbar-brand" href="#">
+          <img src="./assets/icon/icon-logo.svg" alt="Brand-Icon" />
+          <h5>Travelling Apps</h5>
+        </a>
+
+        <!-- TOGGLER BUTTON -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+          <span class="navbar-toggler-icon my-toggler"></span>
+        </button>
+
+        <!-- MENU LINK -->
+        <div id="navbarCollapse" class="collapse navbar-collapse">
+          <ul class="nav navbar navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"> Tempat Pariwisata </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Restaurant </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Hotel </a>
+            </li>
+          </ul>
+        </div>
+        <!-- MENU ICON -->
+        <ul class="nav icon navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fas fa-lg fa-fw fa-bell"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fas fa-lg fa-fw fa-heart"></i>
+            </a>
+          </li>
+          <li class="separator"></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fas fa-lg fa-fw fa-user-circle"></i>
+              <i class="fas fa-sm fa-fw fa-caret-down"></i>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+    </nav>
+  </div>
+
+  <!-- CONTENT -->
+  <div id="content">
+    <div class="container">
+
+      <!-- CART -->
+      <div id="cart" class="row">
+
+        <!-- USER DETAIL -->
+        <div class="col-md-12 text-center justify-content-center align-items-center">
+          <div class="col-sm-12">
+            <div>
+              <div id="checkout">
+                <div class="user-info ">
+                  <!-- START -->
+                  <div id="user-info" class="card">
+                    <div class="card-body">
+                      <h1>Status</h1>
+                      <!-- LOADER -->
+                      <div id="loader"></div>
+                      <div style="display:none;" id="myDiv" class="animate-bottom">
+                        <h2>Yuhuu!!!</h2>
+                        <p>Payment Successfull</p>
+                      </div>
+                      <div class="invoice">
+                        <ul>
+                          <li>
+                            <label for="Payment Type"></label>
+                          </li>
+                          <li>
+                            <label for="Bank"></label>
+                          </li>
+                          <li>
+                            <label for="Phone"></label>
+                          </li>
+                          <li>
+                            <label for="E-Mail"></label>
+                          </li>
+                          <li>
+                            <label for="Amount Paid" class="bold"></label>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- END -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer">
+      <footer>
+        <div class="container">
+          <div class="row">
+            <!-- ABOUT -->
+            <div id="about" class="col-sm-12 col-md-6">
+              <img src="assets/icon/icon-logo.svg" alt="logo-icon" />
+              <p>
+                Scanfcode.com Plan and book your perfect trip with expert
+                advice, travel tips destination information from us.
+              </p>
+              <p>
+                &copy; 2020 All Rights Reserved by <a href="#">Travel Apps</a>.
+              </p>
+            </div>
+            <!-- MENU 1 -->
+            <div class="col-xs-6 col-md-2">
+              <h6>Destinations</h6>
+              <ul class="footer-links">
+                <li><a href="#"> Green Canyon </a></li>
+                <li><a href="#"> Kawah Putih </a></li>
+                <li><a href="#"> Stone Garden </a></li>
+                <li><a href="#"> Curug Cikaso </a></li>
+                <li><a href="#"> Alam Panenjoan </a></li>
+              </ul>
+            </div>
+            <!-- MENU 2 -->
+            <div class="col-xs-6 col-md-2">
+              <h6>Shop</h6>
+              <ul class="footer-links">
+                <li><a href="#">Destination Guides </a></li>
+                <li><a href="#">Pictorial & Gifts </a></li>
+                <li><a href="#">Special Offers </a></li>
+                <li><a href="#">Delivery Times </a></li>
+              </ul>
+            </div>
+            <!-- MENU 3 -->
+            <div class="col-xs-6 col-md-2">
+              <h6>Info</h6>
+              <ul class="footer-links">
+                <li><a href="#">About Us </a></li>
+                <li><a href="#">Contact Us </a></li>
+                <li><a href="#">Contribute </a></li>
+                <li><a href="#">Privacy Policy </a></li>
+                <li><a href="#">Sitemap </a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- SEPARATOR -->
+          <hr />
+        </div>
+        <!-- SOCIAL ICONS -->
+        <div class="container">
+          <div class="links">
+            <ul class="social-icons">
+              <li>
+                <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li>
+                <a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
+              </li>
+              <li>
+                <a class="instagram" href="#"><i class="fa fa-instagram"></i></a>
+              </li>
+              <li>
+                <a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+              </li>
+              <li>
+                <a class="youtube" href="#"><i class="fa fa-youtube"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <script>
+      var myVar;
+
+      function myFunction() {
+        myVar = setTimeout(showPage, 3000);
+      }
+
+      function showPage() {
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("myDiv").style.display = "block";
+      }
+    </script>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

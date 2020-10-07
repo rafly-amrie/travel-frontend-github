@@ -102,91 +102,174 @@
     <div class="container">
 
       <!-- CART -->
-      <!-- <h1>Description</h1> -->
       <div id="cart" class="row">
 
-        <!-- ORDER-LIST -->
-        <div id="card" class="col-md-8">
-          <div class="col-sm-12 mb-3">
-            <div id="booking">
+        <!-- USER DETAIL -->
+        <div class="col-md-8">
+          <div class="col-sm-12">
+
+            <div id="user-info">
               <div class="card-container">
                 <div class="float-layout">
-                  <div class="card-image">
-                    <!-- <img src="assets/img/green-canyon.jpg"> -->
-                    <div class="booking-card">
-                      <div class="content">
-                        <div class="card-title">
-                          <h3> Pantai Santolo</h3>
-                          <div class="price">
-                            <i class="fas fa-lg fa-fw fa-dollar"></i>
-                            <p>1.00</p>
-                          </div>
-                        </div>
-                        <div class="card-desc">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                          Fusce ullamcorper mollis tempus.
-                          Mauris eu maximus lectus, eu auctor justo.
-                          Aenean porta purus vel commodo consequat.
-                        </div>
-                        <div class="qty">
-                          <button><i class="fas fa-sm fa-fw fa-plus-circle"></i></button>
-                          <label for="">1</label>
-                          <button><i class="fas fa-sm fa-fw fa-minus-circle"></i></button>
-                          <br>
-                          <a href="#">Delete Order</a>
-                        </div>
-                        <br>
-                        <div class="license">
-                          <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                          <label for="vehicle1"> User License Agreement </label>
-                          <!-- <input type="checkbox"> <label for=""> User License Agreement</label><a href="#">Delete
-                              Order</a> -->
-                        </div>
+                  <!-- START -->
+                  <div id="user-info" class="card">
+                    <div class="card-body">
+                      <h1>User Account Detail</h1>
+                      <div>
+                        <table class="table table-borderless">
+                          <tr>
+                            <td>
+                              <label for=""> Username </label>
+                            </td>
+                            <td>:</td>
+                            <td>
+                              <label class="label2" for=""> Elliot Alderson </label>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label for=""> Email </label>
+                            </td>
+                            <td>:</td>
+                            <td>
+                              <label class="label2" for=""> elliotalderson@mail.com </label>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label for=""> Phone </label>
+                            </td>
+                            <td>:</td>
+                            <td>
+                              <label class="label2" for=""> +62123456789012 </label>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label for=""> Date of Birth </label>
+                            </td>
+                            <td>:</td>
+                            <td>
+                              <label class="label2" for=""> September 07, 1995 </label>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label for=""> Address </label>
+                            </td>
+                            <td>:</td>
+                            <td>
+                              <label class="label2" for=""> Boulevard Budapest Street No.666 </label>
+                            </td>
+                          </tr>
+                        </table>
                       </div>
                     </div>
                   </div>
+                  <!-- END -->
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="col-sm-12 mb-3">
-            <div id="booking">
+
               <div class="card-container">
                 <div class="float-layout">
-                  <div class="card-image">
-                    <img src="assets/img/pelabuhan-ratu.jpg">
-                    <div class="booking-card">
-                      <div class="content">
-                        <div class="card-title">
-                          <h3> Pantai Indah</h3>
-                          <div class="price">
-                            <i class="fas fa-lg fa-fw fa-dollar"></i>
-                            <p>1.00</p>
+                  <!-- START -->
+                  <div id="payment" class="card">
+                    <div class="card-body">
+                      <h1>Payment Options</h1>
+                      <div>
+                        <!-- HIDE -->
+                        <input type="radio" name="tab" value="igotnone" id="cc" onclick="show1();" />
+                        <label for="cc">Credit Card</label>
+                        <fieldset id="group1">
+                          <!-- SHOW -->
+                          <div id="div1" class="hide">
+
+
+                            <div class="form-group">
+                              <label for="">Account Number</label>
+                              <input type="text" name="" id="cc" class="form-control" placeholder="1234567890">
+                              <label for="">Account Name</label>
+                              <input type="text" name="" id="cc" class="form-control" placeholder="Elliot Alderson">
+                              <div class="form-inline">
+                                <div class="col-md-6">
+                                  <label for="">Expiry Date</label>
+                                  <input type="date" name="" id="cc" class="form-control" placeholder="30/12/2020">
+                                </div>
+                                <div class="col-md-6">
+                                  <label for="">Security Code</label>
+                                  <input type="text" name="" id="cc" class="form-control" placeholder="CVV">
+                                </div>
+                              </div>
+                            </div>
                           </div>
-                        </div>
-                        <div class="card-desc">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                          Fusce ullamcorper mollis tempus.
-                          Mauris eu maximus lectus, eu auctor justo.
-                          Aenean porta purus vel commodo consequat.
-                        </div>
-                        <div class="qty">
-                          <button><i class="fas fa-sm fa-fw fa-plus-circle"></i></button>
-                          <label for="">1</label>
-                          <button><i class="fas fa-sm fa-fw fa-minus-circle"></i></button>
-                          <br>
-                          <a href="#">Delete Order</a>
-                        </div>
-                        <br>
-                        <div class="license">
-                          <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                          <label for="vehicle1"> User License Agreement </label>
-                          <!-- <input type="checkbox"> <label for=""> User License Agreement</label><a href="#">Delete
-                            Order</a> -->
-                        </div>
+                        </fieldset>
+
+                        <!-- HIDE -->
+                        <input type="radio" name="tab" value="igottwo" id="va" onclick="show2();" />
+                        <label for="va">Virtual Account</label>
+                        <fieldset id="group2">
+                          <!-- SHOW -->
+                          <div id="div2" class="hide">
+                            <ul>
+                              <li>
+                                <input class="input2" type="radio" name="group2" id="bni">
+                                <label class="label2" for="bni">BNI</label>
+                              </li>
+                              <li>
+                                <input class="input2" type="radio" name="group2" id="bca">
+                                <label class="label2" for="bca">BCA</label>
+                              </li>
+                              <li>
+                                <input class="input2" type="radio" name="group2" id="mandiri">
+                                <label class="label2" for="mandiri">Mandiri</label>
+                              </li>
+                            </ul>
+                          </div>
+                        </fieldset>
+
+                        <!-- HIDE -->
+                        <input type="radio" name="tab" value="igotthree" id="e-wallet" onclick="show3();" />
+                        <label for="e-wallet">E-Wallet</label>
+                        <fieldset id="group3">
+                          <!-- SHOW -->
+                          <div id="div3" class="hide ">
+                            <ul>
+                              <li>
+                                <input class="input2" type="radio" name="group3" id="ovo">
+                                <label class="label2" for="ovo">OVO</label>
+                              </li>
+                              <li>
+                                <input class="input2" type="radio" name="group3" id="dana">
+                                <label class="label2" for="dana">Dana</label>
+                              </li>
+                              <li>
+                                <input class="input2" type="radio" name="group3" id="gopay">
+                                <label class="label2" for="gopay">Gopay</label>
+                              </li>
+                              <li>
+                                <input class="input2" type="radio" name="group3" id="tmoney">
+                                <label class="label2" for="tmoney">T-Money</label>
+                              </li>
+                              <li>
+                                <input class="input2" type="radio" name="group3" id="link-aja">
+                                <label class="label2" for="link-aja">Link Aja</label>
+                              </li>
+                              <li>
+                                <input class="input2" type="radio" name="group3" id="paypal">
+                                <label class="label2" for="paypal">PayPal</label>
+                              </li>
+                            </ul>
+                          </div>
+                        </fieldset>
+                      </div>
+                      <!-- CHECKBOX -->
+                      <div class="license">
+                        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" required>
+                        <label for="vehicle1"> User License Agreement </label>
                       </div>
                     </div>
                   </div>
+                  <!-- END -->
                 </div>
               </div>
             </div>
@@ -220,14 +303,12 @@
                     <p class="p2">Total : $2.00</p>
                   </h5>
                 </div>
-                <a name="" id="btn-edit" class="btn btn-light btn-block" href="#" role="button"> Book </a>
+                <a name="" id="btn-edit" class="btn btn-light btn-block" href="#" role="button"> Checkout </a>
               </div>
             </div>
           </div>
         </div>
-
       </div>
-
     </div>
   </div>
 
@@ -310,96 +391,46 @@
 
   <!-- Optional JavaScript -->
   <script>
-    $(".dot:nth-child(1)").click(function () {
-      $(".inside").animate({
-          width: "20%",
-        },
-        500
-      );
-    });
-    $(".dot:nth-child(2)").click(function () {
-      $(".inside").animate({
-          width: "40%",
-        },
-        500
-      );
-    });
-    $(".dot:nth-child(3)").click(function () {
-      $(".inside").animate({
-          width: "60%",
-        },
-        500
-      );
-    });
-    $(".dot:nth-child(4)").click(function () {
-      $(".inside").animate({
-          width: "80%",
-        },
-        500
-      );
-    });
-    if ($("#switch1").not(":checked")) {
-      $(".modal").wrap('<div class="mask"></div>');
-      $(".mask").click(function () {
-        $(this).fadeOut(300);
-        $(".mask article").animate({
-            top: "-100%",
-          },
-          300
-        );
-      });
-
-      $(".dot").click(function () {
-        var modal = $(this).attr("id");
-        $(".mask")
-          .has("article." + modal)
-          .fadeIn(300);
-        $(".mask article." + modal)
-          .fadeIn(0)
-          .animate({
-              top: "10%",
-            },
-            300
-          );
-      });
+    function show1() {
+      document.getElementById('div1').style.display = 'block';
+      document.getElementById('div2').style.display = 'none';
+      document.getElementById('div3').style.display = 'none';
     }
-    $("#switch1").click(function () {
-      if ($("#switch1").is(":checked")) {
-        $(".modal").unwrap('<div class="mask"></div>');
-        $(".modal").hide();
-        $(".modal").addClass("nobox");
-        $(".dot").click(function () {
-          var modal = $(this).attr("id");
-          $("article.nobox").hide();
-          $("article.nobox." + modal).fadeIn(200);
-        });
-      } else {
-        $("article").removeClass("nobox");
-        $(".modal").wrap('<div class="mask"></div>');
-        $(".mask").click(function () {
-          $(this).fadeOut(300);
-          $(".mask article").animate({
-              top: "-100%",
-            },
-            300
-          );
-        });
 
-        $(".dot").click(function () {
-          var modal = $(this).attr("id");
-          $(".mask")
-            .has("article." + modal)
-            .fadeIn(300);
-          $(".mask article." + modal)
-            .fadeIn(0)
-            .animate({
-                top: "10%",
-              },
-              300
-            );
+    function show2() {
+      document.getElementById('div1').style.display = 'none';
+      document.getElementById('div2').style.display = 'block';
+      document.getElementById('div3').style.display = 'none';
+    }
+
+    function show3() {
+      document.getElementById('div1').style.display = 'none';
+      document.getElementById('div2').style.display = 'none';
+      document.getElementById('div3').style.display = 'block';
+    }
+  </script>
+
+  <script>
+    var FormStuff = {
+      init: function () {
+        this.applyConditionalRequired();
+        this.bindUIActions();
+      },
+      bindUIActions: function () {
+        $("input[type='radio'], input[type='checkbox']").on("change", this.applyConditionalRequired);
+      },
+      applyConditionalRequired: function () {
+        $(".require-if-active").each(function () {
+          var el = $(this);
+          if ($(el.data("require-pair")).is(":checked")) {
+            el.prop("required", true);
+          } else {
+            el.prop("required", false);
+          }
         });
       }
-    });
+    };
+    FormStuff.init();
   </script>
 
   <!-- CEK KEKELIRUAN ATAU BUG MUNCUL DI CONSOLE LOG -->

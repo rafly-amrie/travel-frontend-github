@@ -126,29 +126,13 @@ body section {
   letter-spacing: 2.5px;
 }
 
-#hero ul {
-  margin-top: 3rem;
-  margin-bottom: 0;
-  text-align: left;
-  color: black;
-}
-
-#hero ul li img {
-  width: 115px;
-  height: 115px;
-}
-
-#hero ul li.user-info {
-  margin-left: 2rem;
-}
-
 #content {
   margin-top: 2rem;
   /* Phone Devices Query */
 }
 
 #content .container {
-  padding: 0px none;
+  padding: none;
 }
 
 #content .card {
@@ -161,159 +145,105 @@ body section {
 }
 
 #content #cart {
-  grid-area: main;
+  /* Add animation to "page content" */
 }
 
-#content #cart .float-layout {
-  margin: 0;
-  height: auto;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+#content #cart #loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -62px 0 0 -62px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
 }
 
-#content #cart #user-info {
-  width: 100%;
-  position: -webkit-sticky;
-  position: sticky;
-  grid-area: right;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  margin-bottom: 5rem;
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
 }
 
-#content #cart #user-info h1 {
-  margin-top: 0px;
-  font-size: 30px;
-  font-weight: bold;
-  margin-bottom: 20px;
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 
-#content #cart #user-info table {
-  font-size: 20px;
+#content #cart .animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s;
 }
 
-#content #cart #user-info table tr td {
-  padding: 7.5px;
+@-webkit-keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0px;
+    opacity: 1;
+  }
 }
 
-#content #cart #user-info table tr td label.label2 {
-  font-weight: bold;
+@keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
 }
 
-#content #cart #payment {
-  width: 100%;
-  position: -webkit-sticky;
-  position: sticky;
-  grid-area: right;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  margin-bottom: 5rem;
-}
-
-#content #cart #payment h1 {
-  margin-top: 0px;
-  font-size: 30px;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-#content #cart #payment .hide {
+#content #cart #myDiv {
   display: none;
+  text-align: center;
 }
 
-#content #cart #payment p {
-  font-weight: bold;
+#content #cart #checkout {
+  margin-bottom: 2.5rem;
+  display: inline-block;
 }
 
-#content #cart #payment input {
-  margin: 0;
-  margin-bottom: 1rem;
-}
-
-#content #cart #payment label {
-  margin: 0;
-  margin-bottom: 1rem;
-}
-
-#content #cart #payment ul {
-  list-style: none;
-}
-
-#content #cart #payment .form-inline label {
-  margin: 0;
-  margin-right: 13rem;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-}
-
-#content #cart #payment .form-inline .col-md-6 {
-  padding-left: 0;
-}
-
-#content #cart #payment .reveal-if-active {
-  opacity: 0;
-  max-height: 0;
-  overflow: hidden;
-  font-size: 16px;
-  -webkit-transform: scale(0.8);
-          transform: scale(0.8);
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-#content #cart #payment .reveal-if-active label {
-  display: block;
-  margin: 0 0 3px 0;
-}
-
-#content #cart #payment .reveal-if-active input[type=text] {
+#content #cart #checkout .user-info {
   width: 100%;
+  height: 100%;
+  margin: 0;
 }
 
-input[type="radio"]:checked ~ #content #cart #payment .reveal-if-active,
-input[type="checkbox"]:checked ~ #content #cart #payment .reveal-if-active {
-  opacity: 1;
-  max-height: 100px;
-  padding: 10px 20px;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  overflow: visible;
-}
-
-#content #cart #payment form {
-  max-width: 500px;
-  margin: 20px auto;
-}
-
-#content #cart #payment form > div {
-  margin: 0 0 20px 0;
-}
-
-#content #cart #payment form > div label {
+#content #cart #checkout .user-info h1 {
+  margin-top: 0px;
+  font-size: 30px;
   font-weight: bold;
+  margin-bottom: 20px;
 }
 
-#content #cart #payment form > div > div {
-  padding: 5px;
+#content #cart #checkout .user-info ul li label {
+  color: black;
 }
 
-#content #cart #payment form > h4 {
-  color: green;
-  font-size: 24px;
-  margin: 0 0 10px 0;
-  border-bottom: 2px solid green;
-}
-
-#content #cart #payment body {
-  font-size: 20px;
-}
-
-#content #cart #payment * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+#content #cart #checkout .user-info .invoice {
+  display: inline-block;
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -331,73 +261,6 @@ input[type="checkbox"]:checked ~ #content #cart #payment .reveal-if-active {
     width: 100%;
     margin-top: -4px;
   }
-}
-
-#content #card2 {
-  position: -webkit-sticky;
-  position: sticky;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  width: 100%;
-  grid-area: right;
-}
-
-#content #card2 .hr-total {
-  position: relative;
-  border: none;
-  height: 3px;
-  background: black;
-}
-
-#content #card2 h1 {
-  margin-top: 0px;
-  margin-bottom: 20px;
-  text-align: center;
-  font-size: 30px;
-  font-weight: bold;
-}
-
-#content #card2 p {
-  display: inline;
-}
-
-#content #card2 .p2 {
-  float: right;
-}
-
-#content #card2 .bayar {
-  display: inline;
-}
-
-#content #card2 .bayar h5 {
-  font-weight: bold;
-}
-
-#content #card2 label {
-  margin-bottom: 0rem;
-}
-
-#content #card2 #btn-edit {
-  border-radius: 1rem;
-  text-align: center;
-  margin-top: 2rem;
-  background-color: #00aced;
-  color: white;
-}
-
-#content #card2 #btn-edit:hover {
-  letter-spacing: 2.5px;
-}
-
-#codepen img {
-  background-position: center;
-  background-size: cover;
-  -o-object-fit: cover;
-     object-fit: cover;
-  height: 25vmax;
-  width: 100%;
-  z-index: -1;
 }
 
 #footer {
@@ -531,4 +394,4 @@ input[type="checkbox"]:checked ~ #content #cart #payment .reveal-if-active {
     font-weight: 600;
   }
 }
-/*# sourceMappingURL=booking.css.map */
+/*# sourceMappingURL=checkout.css.map */
