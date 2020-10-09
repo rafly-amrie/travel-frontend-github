@@ -103,20 +103,20 @@ body {
 }
 
 .content .card {
-  position: relative;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   border: none;
   width: 30rem;
+  margin: auto;
   color: white;
+  margin-top: 1rem;
+  position: relative;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  margin: auto;
-  margin-top: 5rem;
   margin-bottom: 5rem;
   border-radius: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: #0077B6;
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
